@@ -15,14 +15,20 @@ public class CheckGuestBonus {
         System.out.println("Come ti chiami?");
         String nameUser = input.nextLine();
 
-        // verificare che il nome sia presente nella lista
+        // verificare che il nome sia presente nella lista con ciclo while
+        
         boolean isInvited = false;
 
-        for(int i = 0; i < guestList.length; i++){
+        // Creo un ciclo while che itera solo fino a quando il nome dell'utente sarà uguale ad uno dei nomi degli invitati
+        
+        int i = 0;
+        while(i < guestList.length && !isInvited){
            
             if(nameUser.equals(guestList[i])){
                 isInvited = true;
             } 
+
+            i++;
         };
         
         
@@ -35,9 +41,7 @@ public class CheckGuestBonus {
             System.out.println("Torna da dove sei venuto");
 
         };
-
-
-
+      
 
         input.close();
 
