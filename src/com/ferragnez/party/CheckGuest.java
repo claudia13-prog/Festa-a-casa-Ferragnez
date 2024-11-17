@@ -16,7 +16,6 @@ public class CheckGuest {
         String nameUser = input.nextLine();
 
         // verificare che il nome sia presente nella lista
-        // lasciarlo entrare o rispedirlo cortesemente da dove è venuto
         boolean isInvited = false;
 
         for(int i = 0; i < guestList.length; i++){
@@ -25,6 +24,9 @@ public class CheckGuest {
                 isInvited = true;
             } 
         };
+        
+        
+        // lasciarlo entrare o rispedirlo cortesemente da dove è venuto
 
         if(isInvited){
             System.out.println("Puoi entrare");
